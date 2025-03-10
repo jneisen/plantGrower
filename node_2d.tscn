@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpcfpp85a0dji"]
+
+[ext_resource type="Script" path="res://plant_growth.gd" id="1_xj64e"]
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("_sprite")]
+script = ExtResource("1_xj64e")
+_sprite = NodePath("Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(20, 20)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
